@@ -31,7 +31,7 @@ The output files are already in your project folder:
 
 ---
 
-Sources:
+#### Sources:
 - [UCLA Course Descriptions](https://registrar.ucla.edu/academics/course-descriptions)
 - [Department & Subject Area Codes](https://registrar.ucla.edu/faculty-staff/courses-and-programs/department-and-subject-area-codes)
 - [UCLA API Developer Portal](https://developer.api.ucla.edu/api-catalog)
