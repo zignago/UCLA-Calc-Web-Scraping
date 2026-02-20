@@ -1,5 +1,7 @@
 
-scraper.py — a clean Python script that:
+# scraper.py
+
+a Python script that:
 
   1. Calls UCLA's own public API (api.ucla.edu/sis/publicapis/course/...) — the same API the registrar's website uses internally. No browser, no login, no scraping of HTML.
   2. Searches for "Mathematics 31A" across all course descriptions in one API call.
@@ -11,21 +13,26 @@ scraper.py — a clean Python script that:
   ---
   How to run it
 
-  # Default — fast (5 seconds), saves Excel
+  #### Default — fast (5 seconds), saves Excel
   python3 scraper.py
 
-  # Also save a CSV
+  #### Also save a CSV
   python3 scraper.py --csv
 
-  # Custom output filename
+  #### Custom output filename
   python3 scraper.py --out results.xlsx
 
-  # Slower thorough mode (fetches all ~200 subject areas individually, ~5 min)
+  #### Slower thorough mode (fetches all ~200 subject areas individually, ~5 min)
   python3 scraper.py --all-subjects
 
   The output files are already in your project folder:
   - ucla_courses_requiring_calc1.xlsx
   - ucla_courses_requiring_calc1.csv
+
+
+
+
+  
 
   Sources used during investigation:
   - [UCLA Course Descriptions](https://registrar.ucla.edu/academics/course-descriptions)
