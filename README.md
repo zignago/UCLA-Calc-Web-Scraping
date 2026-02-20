@@ -1,5 +1,5 @@
 
-# scraper.py
+## scraper.py
 
 a Python script that:
 
@@ -11,30 +11,27 @@ a Python script that:
   The result: 52 courses across 17 subject areas, including Chemistry 20A/20B, Physics 1A/1AH, Economics 11/41, Astronomy 81/82, Civil Engineering 91, and others. They span lower-division, upper-division, and graduate levels.
 
   ---
-  How to run it
+  How to run a webscrape:
 
-  #### Default — fast (5 seconds), saves Excel
+  ### Default — fast (5 seconds), saves Excel
   python3 scraper.py
 
-  #### Also save a CSV
+  ### Also save a CSV
   python3 scraper.py --csv
 
-  #### Custom output filename
+  ### Custom output filename
   python3 scraper.py --out results.xlsx
 
-  #### Slower thorough mode (fetches all ~200 subject areas individually, ~5 min)
+  ### Slower thorough mode (fetches all ~200 subject areas individually, ~5 min)
   python3 scraper.py --all-subjects
 
   The output files are already in your project folder:
   - ucla_courses_requiring_calc1.xlsx
   - ucla_courses_requiring_calc1.csv
 
+  ---
 
-
-
-  
-
-  Sources used during investigation:
+  Sources:
   - [UCLA Course Descriptions](https://registrar.ucla.edu/academics/course-descriptions)
   - [Department & Subject Area Codes](https://registrar.ucla.edu/faculty-staff/courses-and-programs/department-and-subject-area-codes)
   - [UCLA API Developer Portal](https://developer.api.ucla.edu/api-catalog)
